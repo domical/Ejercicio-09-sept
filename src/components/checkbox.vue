@@ -1,13 +1,19 @@
-<script setup>
-import Checkbox from './components/checkbox.vue'
-</script>
-
 <template>
     <div>
     <input type="number" v-model="numero" placeholder="Ingresa un número" />
     <p>El número ingresado es: {{ numero }}</p>
     </div>
 </template>
+
+<script>
+    export default {
+    data() {
+    return {
+        numero: null
+    };
+    }
+};
+</script>
 
 <style scoped>
 input {
